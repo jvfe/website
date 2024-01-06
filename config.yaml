@@ -1,0 +1,65 @@
+baseURL: "/"
+theme: risotto
+title: João Cavalcante
+copyright: 🄯 2023
+paginate: 3
+languageCode: en
+DefaultContentLanguage: en
+enableInlineShortcodes: yes
+ignoreErrors: error-remote-getjson
+sectionPagesMenu: main
+params:
+    about:
+        description: "Bioinformatician"
+        logo: images/favicon.ico
+        title: João Cavalcante
+    noindex: no
+    socialLinks:
+        - icon: fa-brands fa-github
+          title: GitHub
+          url: https://github.com/jvfe
+        - icon: ai ai-orcid
+          title: ORCID
+          url: https://orcid.org/0000-0001-7513-7376
+        - icon: ai ai-lattes
+          title: Lattes
+          url: http://lattes.cnpq.br/5714602163308583
+    theme:
+        palette: gruvbox-light
+menu:
+    main:
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 10
+taxonomies:
+    category: categories
+    series: series
+    tag: tags
+markup:
+    goldmark:
+        renderer:
+            unsafe: yes
+    tableOfContents:
+        endLevel: 3
+        ordered: yes
+        startLevel: 2
+privacy:
+    instagram:
+        disabled: no
+        simple: yes
+    twitter:
+        disabled: no
+        enableDNT: yes
+        simple: yes
+    vimeo:
+        disabled: no
+        simple: yes
+    youtube:
+        disabled: no
+        privacyEnhanced: yes
+services:
+    instagram:
+        disableInlineCSS: yes
+    twitter:
+        disableInlineCSS: yes

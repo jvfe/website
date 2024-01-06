@@ -1,0 +1,41 @@
+<link rel="icon" href="{{ .Site.BaseURL }}/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/site.webmanifest">
+<!DOCTYPE html>
+<html lang="{{- site.Language.Lang -}}">
+
+<head>
+    {{- partial "head.html" . -}}
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="page__header">
+            {{- partial "header.html" . -}}
+        </header>
+
+        <section class="page__body">
+            {{- block "main" . }}{{- end }}
+        </section>
+
+        <section class="page__aside">
+            <div class="aside__about">
+                {{- partial "about.html" . -}}
+            </div>
+            <hr>
+            <div class="aside__content">
+                {{- block "aside" . }}{{- end }}
+            </div>
+        </section>
+
+        <footer class="page__footer">
+            {{- partial "footer.html" . -}}
+        </footer>
+
+    </div>
+</body>
+
+</html>
