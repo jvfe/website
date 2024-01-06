@@ -10,9 +10,9 @@ ignoreErrors: error-remote-getjson
 sectionPagesMenu: main
 params:
     about:
-        description: "Bioinformatician"
-        logo: images/favicon.ico
-        title: João Cavalcante
+        description: "![](/images/joao_rounded.png)"
+        logo:
+        title:
     noindex: no
     socialLinks:
         - icon: fa-brands fa-github
